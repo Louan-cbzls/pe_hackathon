@@ -21,16 +21,20 @@ def positionT():
     return(lettre_T)
 
 def reduction(Mat):
-    for i in range(len(Mat[0])):
-        if Mat[i] == np.zeros(len(Mat[0])):
-            np.delete(Mat,i,axis=0)
+    L=[]
+    K=len(Mat)
+    for i in range(K):
+        if sum(Mat[i]) == 0 :
+            L.append(i)
+    Mat=np.delete(Mat,L,0)
+    L=[]
     Mat=np.transpose(Mat)
-    for i in range(len(Mat[0])):
-        if Mat[i] == np.zeros(len(Mat[0])):
-            np.delete(Mat,i,axis=0)
-    return(Mat)
-
-reduction([[1,1,1],[0,0,0],[0,0,0]])
+    for i in range(K):
+        if sum(Mat[i]) == 0 :
+            L.append(i)
+    Mat=np.delete(Mat,L,0)
+    return(np.transpose(Mat))
+    
 
 
 

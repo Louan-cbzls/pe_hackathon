@@ -1,3 +1,3 @@
-# pe_hackathon
+# pe-hackathon
 Groupe : Nico, Baptiste, Alexis, Louan
 test

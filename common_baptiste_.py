@@ -3,6 +3,30 @@ import numpy as np
 n = 6
 m = 10
 
+lettre_u = np.array([[0,0,0],[1,0,1],[1,1,1]])
+lettre_v = np.array([[0,0,1],[0,0,1], [1,1,1])
+lettre_w = np.array([[0,0,1],[0,1,1],[1,1,0]])
+lettre_i=np.zeros((5,5))
+lettre_i[0,0]=1
+lettre_i[1,0]=1
+lettre_i[2,0]=1
+lettre_i[3,0]=1
+lettre_i[4,0]=1
+lettre_l[0,0]=1
+lettre_l[1,0]=1
+lettre_l[2,0]=1
+lettre_l[3,0]=1
+lettre_l[3,1]=1
+print(lettre_l)
+lettre_n[0,1]=1
+lettre_n[1,1]=1
+lettre_n[2,1]=1
+lettre_n[2,0]=1
+lettre_n[3,0]=1
+print(lettre_n)
+
+
+
 dict = {'f' : lettre_f, 'i' :lettre_i, 'l' : lettre_l, 'n': lettre_n, 'p': lettre_p, 't': lettre_t, 'u' : lettre_u,'v':lettre_v, 'w': lettre_w, 'x' : lettre_x, 'z' : lettre_z}
 
 Lettres_Base = [lettre_f,lettre_i,lettre_l,lettre_n,lettre_p,lettre_t,lettre_u,lettre_v,lettre_w,lettre_x,lettre_y,lettre_z]

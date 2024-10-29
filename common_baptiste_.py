@@ -12,18 +12,37 @@ lettre_i[1,0]=1
 lettre_i[2,0]=1
 lettre_i[3,0]=1
 lettre_i[4,0]=1
+lettre_l=np.zeros((4,4))
 lettre_l[0,0]=1
 lettre_l[1,0]=1
 lettre_l[2,0]=1
 lettre_l[3,0]=1
 lettre_l[3,1]=1
-print(lettre_l)
+
+lettre_n=np.zeros((4,4))
 lettre_n[0,1]=1
 lettre_n[1,1]=1
 lettre_n[2,1]=1
 lettre_n[2,0]=1
 lettre_n[3,0]=1
-print(lettre_n)
+
+lettre_f=np.zeros((3,3))
+lettre_f[0,1]=1
+lettre_f[0,2]=1
+lettre_f[1,0]=1
+lettre_f[1,1]=1
+lettre_f[2,1]=1
+
+lettre_t = np.array([[1,1,1],[0,1,0],[0,1,0]])
+lettre_x = np.array([[0,1,0],[1,1,1],[0,1,0]])
+lettre_y = np.array([[0,0,0,0],[0,0,0,0],[0,0,1,0],[1,1,1,1]])
+lettre_z = np.array([[1,1,0],[1,1,1],[0,1,1]])
+lettre_p = np.array([[1,1,0],[1,1,0],[1,0,0]])
+
+
+
+
+
 
 
 
@@ -37,7 +56,7 @@ def grille(n,m):
 
 
 def rotation(tab):
-    return(numpy.rot90(tab))
+    return(numpy.rot90(tab,1,(0,1)))
 
 def symetrie(tab):
     return(numpy.fliplr(tab))

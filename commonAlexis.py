@@ -34,3 +34,16 @@ lettre_n[2,1]=1
 lettre_n[2,0]=1
 lettre_n[3,0]=1
 print(lettre_n)
+
+def placement(grille,matrice):
+    n,p=np.shape(grille)
+    s,t=np.shape(matrice)
+    m=(n-s)*(p-t)
+    liste=[]
+    for i in range(n-s+1):
+        for j in range(p-t+1):
+            nom=np.zeros((n,p))
+            nom[i:i+s,j:j+t]=matrice
+            liste.append(nom)
+    return liste
+

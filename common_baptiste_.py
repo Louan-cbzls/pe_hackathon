@@ -46,7 +46,7 @@ lettre_p = np.array([[1,1,0],[1,1,0],[1,0,0]])
 
 
 
-dict = {'f' : lettre_f, 'i' :lettre_i, 'l' : lettre_l, 'n': lettre_n, 'p': lettre_p, 't': lettre_t, 'u' : lettre_u,'v':lettre_v, 'w': lettre_w, 'x' : lettre_x, 'z' : lettre_z}
+dict = {'f' : lettre_f, 'i' :lettre_i, 'l' : lettre_l, 'n': lettre_n, 'p': lettre_p, 't': lettre_t, 'u' : lettre_u,'v':lettre_v, 'w': lettre_w, 'x' : lettre_x,'y' : lettre_y , 'z' : lettre_z}
 
 Lettres_Base = [lettre_f,lettre_i,lettre_l,lettre_n,lettre_p,lettre_t,lettre_u,lettre_v,lettre_w,lettre_x,lettre_y,lettre_z]
 

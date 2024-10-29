@@ -71,6 +71,7 @@ def ensemble_rotation_symetrie(lettre):
 
 def Lettres_tot(tab):
     Lettres_tot =[]
-    for key in dict.keys :
-        Lettres_tot.append(ensemble_rotation_symetrie(dict['key']))
+    for key in dict.key() :
+        Lettres_tot.append(ensemble_rotation_symetrie(dict[key]))
     return(Lettres_tot)
+
